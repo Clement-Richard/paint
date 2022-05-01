@@ -1,0 +1,76 @@
+```css
+:root {
+	--canvaHeightSize: 1000;
+	--canvaWidthSize: 600;
+}
+
+#canvas {
+	height: var(--canvaHeightSize);
+	width: var(--canvaWidthSize);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+	margin-top: 10px;
+}
+
+body {
+	font-family: 'Alex Brush', cursive !important;
+}
+
+.page {
+	display: none;
+}
+
+.settings{
+	display: flex;
+}
+h1{
+	display: flex;
+	justify-content: center;
+}
+.op1{
+	display: flex;
+	justify-content: center;
+}
+
+.op2{
+	display: flex;
+	justify-content: center;
+}
+
+.op3{
+	display: flex;
+	justify-content: center;
+
+}
+.op4{
+	display: flex;
+	justify-content: center;
+
+}
+
+.op5{
+	display: flex;
+	justify-content: center;
+
+}
+
+.op6{
+	display: flex;
+	justify-content: center;
+
+}
+#loading {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgb(255, 255, 255);
+	background-image: url("https://thumbs.gfycat.com/DearWellinformedDalmatian-size_restricted.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+```

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Paint.js">
+  <title>Paint.js</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.discordapp.com/attachments/829065950727766076/898683316419588176/style.css">
+    <link rel="stylesheet" href="https://cdn.discordapp.com/attachments/829065950727766076/898682924466065529/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="page">
+    <div class="container-fluid">
+      <h1>PAINT RICHARD CLÉMENT ET TURLURE NATHAN</h1>
+      <div class="row settings">
+
+        <canvas id="canvas" class="border border-primary"></canvas>
+
+
+        <div>
+
+          <div class="op1 mb-2">
+            <input type="submit" class="btn btn-dark m-lg-2" name="gomme" id="mode" value="Gomme" />
+            <input type="submit" class="btn btn-dark m-lg-2" name="undo" id="undo" value="Annuler" />
+            <input type="submit" class="btn btn-dark m-lg-2" name="redo" id="redo" value="Refaire" />
+          </div>
+
+          <div class="op2 mb-2">
+            <input type="submit" class="btn btn-dark m-lg-2" name="line" id="mode" value="Ligne" />
+
+            <input type="submit" class="btn btn-dark m-lg-2" name="default" id="mode" value="Main levée" />
+
+            <input type="submit" class="btn btn-dark m-lg-2" name="text" id="mode" value="Texte" />
+
+            <input type="text" class='property form-control m-lg-2' name="textValue" id="textValue" placeholder="Texte" />
+
+            <label for="textSize" id="textSizeLabel">Taille du texte</label>
+            <input type="number" class='property m-lg-2' id="textSize" value="12" />
+
+            <input type="submit" class="btn btn-dark m-lg-2" name="square" id="mode" value="Carré" />
+            <input type="submit" class="btn btn-dark m-lg-2" name="circle" id="mode" value="Cercle" />
+            <input type="submit" class="btn btn-dark m-lg-2" name="triangle" id="mode" value="Triangle" />
+        </div>
+          <div class="op3 mb-2">
+            <label for="textColor" id="textColorLabel">Couleur du Texte</label>
+            <input type="color" class='property m-lg-2' id="textColor" name="textColor" value="#000000">
+
+            <label for="head">Couleur de la forme</label>
+            <input type="color" class='property m-lg-2' id="formeColor" name="formeColor" value="#000000">
+
+            <label for="head">Couleur du pinceau</label>
+            <input type="color" class='property m-lg-2' id="penColor" name="penColor" value="#000000">
+
+            <label for="formeWidth" id="formeWidthLabel">Largeur de la forme</label>
+            <input type="number" class='property m-lg-2' id="formeWidth" value="100" />
+
+            <label for="formeHeigth" id="formeHeigthLabel">Hauteur de la forme</label>
+            <input type="number" class='property m-lg-2' id="formeHeigth" value="100" />
+          </div>
+
+          <div class="op4 mb-2">
+            <label for="penWidth">Taille du pinceau</label>
+            <input type="range" class='property form-range m-lg-2' id="penWidth" name="penWidth" min="1" max="100" value="1">
+
+            <label for="gommeWidth">Taille de la gomme</label>
+            <input type="range" class='property form-range m-lg-2' id="gommeWidth" name="gommeWidth" min="1" max="100"
+              value="1">
+          </div>
+          <div class="op5 mb-2">
+            <input type="submit" class='property btn btn-dark m-lg-2' name="square" id="formeStyle" value="dynamique" />
+            <input type="submit" class='property btn btn-dark m-lg-2' name="square" id="formeStyle" value="statique" />
+          </div>
+          <div class="op6 mb-2">
+            <input type="submit" class="btn btn-dark m-lg-2" name="download" id="download" value="Télécharger" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="loading"></div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="js/formes.js"> </script>
+<script src="js/evenements.js"> </script>
+  <script src="js/pageEvent.js"> </script>
+  <script src="js/script.js"> </script>
+</html>
